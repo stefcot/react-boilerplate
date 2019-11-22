@@ -1,0 +1,11 @@
+{
+  "name": "react-from-scratch",
+  "version": "1.0.0",
+  "description": "React project from scratch based on Egghead course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephane Cottereau",
+  "license": "ISC"
+}
