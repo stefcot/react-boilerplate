@@ -6,6 +6,7 @@
   "scripts": {
     "win32-html": "start dist/index.html",
     "babel": "babel ./src/greet.js --presets=@babel/preset-env",
+    "dev": "webpack --watch --mode development",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
