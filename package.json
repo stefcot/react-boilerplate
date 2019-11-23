@@ -4,6 +4,7 @@
   "description": "React project from scratch based on Egghead course",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stephane Cottereau",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/stefcot/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/stefcot/react-boilerplate#readme"
+  "homepage": "https://github.com/stefcot/react-boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
