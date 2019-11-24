@@ -1,4 +1,3 @@
-import {hot} from 'react-hot-loader'
 import React from 'react'
 
 class App extends React.Component {
@@ -14,7 +13,7 @@ class App extends React.Component {
     count: 0
   }
 
-  increment(ev) {
+  increment() {
     this.setState({count: this.state.count + 1})
   }
 
@@ -42,4 +41,4 @@ class App extends React.Component {
   }
 }
 
-export default hot(module)(App)
+export default App
