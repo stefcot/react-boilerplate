@@ -6,5 +6,6 @@ module.exports = merge(baseConfig, {
   devServer: {
     port: 3000
   },
+  // build: slow, rebuild: fast, production: no, quality: original source (lines only)
   devtool: 'cheap-module-eval-source-map'
 })
