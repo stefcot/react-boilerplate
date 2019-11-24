@@ -1,12 +1,28 @@
 import React from 'react'
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    // This binding is necessary to make `this` work in the callback
+    this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
+  }
+
   // have to install @babel/plugin-proposal-class-properties
   state = {
     count: 0
   }
 
+  increment(ev) {
+    this.setState({count: this.state.count + 1})
+  }
+
+  decrement(){
+    this.setState({count: this.state.count - 1})
+  }
+
   render() {
+    const {count} = this.state
     return (
         <div>
           <h1>Added watch mode to webpack config!</h1>
@@ -17,9 +33,9 @@ class App extends React.Component {
             <code>webpack-dev-server --open --config webpack.config.dev.js</code>
           </p>
           <h2>State</h2>
-          <p>Count: {this.state.count}</p>
-          <button onClick={() => this.setState({count: this.state.count + 1})}>+</button>
-          <button onClick={() => this.setState({count: this.state.count - 1})}>-</button>
+          <p className={count >10 ? 'warning' : null}>Count: {count}</p>
+          <button onClick={this.increment}>+</button>
+          <button onClick={this.decrement}>-</button>
         </div>
     )
   }
