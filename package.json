@@ -4,9 +4,8 @@
   "description": "React project from scratch based on Egghead course",
   "main": "index.js",
   "scripts": {
-    "win32-html": "start dist/index.html",
     "babel": "babel ./src/greet.js --presets=@babel/preset-env",
-    "dev": "webpack --watch  --config webpack.config.dev.js",
+    "dev": "webpack-dev-server --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,6 +32,7 @@
     "react-props": "0.0.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
     "webpack-merge": "^4.2.2"
   }
 }
