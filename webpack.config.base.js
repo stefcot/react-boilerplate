@@ -7,6 +7,11 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'app.bundle.js'
   },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    },
+  },
   module: {
     rules: [
       {
@@ -19,16 +24,16 @@ module.exports = {
             '@babel/preset-react'
           ],
           plugins: [
-             'react-hot-loader/babel',
-             '@babel/plugin-proposal-class-properties'
+            'react-hot-loader/babel',
+            '@babel/plugin-proposal-class-properties'
           ]
         }
       },
       {
         test:/\.css$/,
         use:[
-            'style-loader',
-            'css-loader'
+          'style-loader',
+          'css-loader'
         ],
         exclude: /node_modules/
       }
