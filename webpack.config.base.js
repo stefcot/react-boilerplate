@@ -22,6 +22,14 @@ module.exports = {
              '@babel/plugin-proposal-class-properties'
           ]
         }
+      },
+      {
+        test:/\.css$/,
+        use:[
+            'style-loader',
+            'css-loader'
+        ],
+        exclude: /node_modules/
       }
     ]
   },
