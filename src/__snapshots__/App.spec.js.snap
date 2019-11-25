@@ -1,54 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App It should render App component with count set to 12 1`] = `
+exports[`App It should render App component the same as snapshot 1`] = `
 <DocumentFragment>
   <main>
-    <img
-      alt=""
-      src="./logo.png"
-    />
     <h1>
-      Added watch mode to webpack config!
+      Base for your project
     </h1>
-    <h2>
-      Subtitle gonna raise an accessibility issue with React axe if 
-      <code>
-        &lt;h3&gt;
-      </code>
-       is used
-    </h2>
-    <p>
-      We have to refresh the browser though.
-    </p>
-    <h2>
-      Served by webpack dev server
-    </h2>
-    <p>
-      Now all modifications will be watched by webpack-dev-server.
-      <br />
-      <em>
-        All will be built ad watched automatically
-      </em>
-       with: 
-      <br />
-      <code>
-        webpack-dev-server --open --config webpack.config.dev.js
-      </code>
-    </p>
-    <h2>
-      State
-    </h2>
-    <p
-      class="warning"
-    >
-      Count: 13
-    </p>
-    <button>
-      +
-    </button>
-    <button>
-      -
-    </button>
   </main>
 </DocumentFragment>
 `;
