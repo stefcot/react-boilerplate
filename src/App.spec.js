@@ -1,6 +1,6 @@
 // Initialize a set of tests
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
+import { render, fireEvent, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import App from './App'
 
@@ -10,6 +10,7 @@ const setup = () => {
 }
 
 describe('App', () => {
+  afterEach(cleanup);
   // Supposed to fail cause of the lazy loading,
   // Otherwise, install babel-plugin-dynamic-import-node
   // cause jest runs on node
