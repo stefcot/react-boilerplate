@@ -1,5 +1,9 @@
 import React from 'react'
-import Warning from './warning'
+//import Warning from './warning'
+// with this version of babel, don't need to add @babel/plugin-syntax-dynamic-import
+
+// Will split this piece of code
+const Warning = React.lazy(() => import('./warning'))
 
 class App extends React.Component {
   constructor(props) {
@@ -37,7 +41,11 @@ class App extends React.Component {
           <p className={count >10 ? 'warning' : null}>Count: {count}</p>
           <button onClick={this.increment}>+</button>
           <button onClick={this.decrement}>-</button>
-          {count >10 ? <Warning/> : null}
+          {count >10 ?
+            <React.Suspense fallback={null}>
+              <Warning/>
+            </React.Suspense>
+            : null}
         </div>
     )
   }
