@@ -17,9 +17,12 @@ module.exports = merge(baseConfig, {
         options: {
           presets: [
             ['@babel/preset-env', { // use with '@babel/polyfill'
-              targets: {
-                chrome: 68
-              },
+              targets: [
+                'last 2 versions',
+                'not dead',
+                'not < 2%',
+                'not ie 11'
+              ],
               useBuiltIns: 'entry'
             }],
             '@babel/preset-react'

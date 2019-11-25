@@ -1,4 +1,4 @@
-### React boilerplate
+### React boilerplate hints
 
 #### Git ...
 To reset git authentication and get rid of it, type this
@@ -16,3 +16,9 @@ On PC
 ```
 start ./src/index.html
 ```
+#### Browserslist query
+To get adpated browsers list, combined with <code>'@babel/polyfill'</code>, type for instance:
+```
+npx browserslist "last 2 versions, not dead, not < 2%"
+```
+Sends back a list of browsers having a a quite current version, still maintained with more than 2% marketshare
