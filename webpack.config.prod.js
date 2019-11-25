@@ -15,7 +15,12 @@ module.exports = merge(baseConfig, {
         exclude: /node_modules/,
         options: {
           presets: [
-            '@babel/preset-env',
+            ['@babel/preset-env', { // use with '@babel/polyfill'
+              targets: {
+                chrome: 68
+              },
+              useBuiltIns: 'entry'
+            }],
             '@babel/preset-react'
           ],
           plugins: [
