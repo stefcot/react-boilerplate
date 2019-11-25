@@ -3,6 +3,10 @@
 exports[`App It should render App component with count set to 12 1`] = `
 <DocumentFragment>
   <div>
+    <img
+      alt=""
+      src="./logo.png"
+    />
     <h1>
       Added watch mode to webpack config!
     </h1>
