@@ -18,6 +18,12 @@ class App extends React.Component {
     count: 0
   }
 
+  setCountTo12()  {
+    this.setState({
+      count: 12,
+    });
+  }
+
   increment() {
     this.setState({count: this.state.count + 1})
   }

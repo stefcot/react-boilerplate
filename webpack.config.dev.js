@@ -14,18 +14,6 @@ module.exports = merge(baseConfig, {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        options: {
-          presets: [
-            ['@babel/preset-env', { // use with '@babel/polyfill', will get browsers list from .browserslistrc
-              useBuiltIns: 'entry'
-            }],
-            '@babel/preset-react'
-          ],
-          plugins: [
-            'react-hot-loader/babel',
-            '@babel/plugin-proposal-class-properties'
-          ]
-        }
       },
       {
         test:/\.css$/,
