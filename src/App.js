@@ -1,4 +1,5 @@
 import React from 'react'
+import Warning from './warning'
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends React.Component {
           <p className={count >10 ? 'warning' : null}>Count: {count}</p>
           <button onClick={this.increment}>+</button>
           <button onClick={this.decrement}>-</button>
+          {count >10 ? <Warning/> : null}
         </div>
     )
   }
