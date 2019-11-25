@@ -23,9 +23,6 @@ class App extends React.Component {
       count: 12
     })
   }
-  UNSAFE_componentWillMount() {
-    console.log('componentWillMount')
-  }
 
   increment() {
     this.setState({ count: this.state.count + 1 })
