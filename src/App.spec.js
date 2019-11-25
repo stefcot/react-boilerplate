@@ -14,7 +14,7 @@ describe('App', () => {
   // Otherwise, install babel-plugin-dynamic-import-node
   // cause jest runs on node
   it('It should render App component', () => {
-    const { container } = setup()
+    render(<App/>)
   })
 
   it('It should render App component with count set to 12', () => {
