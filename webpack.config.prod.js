@@ -38,5 +38,9 @@ module.exports = merge(baseConfig, {
         openAnalyzer: false,
         reportFilename: 'bundle_analyzer.html'
       })
-  ]
+  ],
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  }
 })
