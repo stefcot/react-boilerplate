@@ -2,7 +2,7 @@
 
 exports[`App It should render App component with count set to 12 1`] = `
 <DocumentFragment>
-  <div>
+  <main>
     <img
       alt=""
       src="./logo.png"
@@ -10,6 +10,13 @@ exports[`App It should render App component with count set to 12 1`] = `
     <h1>
       Added watch mode to webpack config!
     </h1>
+    <h2>
+      Subtitle gonna raise an accessibility issue with React axe if 
+      <code>
+        &lt;h3&gt;
+      </code>
+       is used
+    </h2>
     <p>
       We have to refresh the browser though.
     </p>
@@ -42,6 +49,6 @@ exports[`App It should render App component with count set to 12 1`] = `
     <button>
       -
     </button>
-  </div>
+  </main>
 </DocumentFragment>
 `;

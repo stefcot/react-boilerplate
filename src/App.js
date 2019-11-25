@@ -35,9 +35,13 @@ class App extends React.Component {
   render() {
     const { count } = this.state
     return (
-      <div>
+      <main>
         <img src="./logo.png" alt="" />
         <h1>Added watch mode to webpack config!</h1>
+        <h2>
+          Subtitle gonna raise an accessibility issue with React axe if{' '}
+          <code>&lt;h3&gt;</code> is used
+        </h2>
         <p>We have to refresh the browser though.</p>
         <h2>Served by webpack dev server</h2>
         <p>
@@ -55,7 +59,7 @@ class App extends React.Component {
             <Warning />
           </React.Suspense>
         ) : null}
-      </div>
+      </main>
     )
   }
 }
