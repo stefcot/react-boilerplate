@@ -3,11 +3,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import '@babel/polyfill'
 import App from './App'
+import DefaultErrorBoundary from './DefaultErrorBoundary'
 import './styles.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DefaultErrorBoundary>
+      <App />
+    </DefaultErrorBoundary>
   </React.StrictMode>,
   document.getElementById('app')
 )
@@ -17,7 +20,9 @@ if (hot) {
     const NextApp = require('./App').default
     ReactDOM.render(
       <React.StrictMode>
-        <NextApp />
+        <DefaultErrorBoundary>
+          <NextApp />
+        </DefaultErrorBoundary>
       </React.StrictMode>,
       document.getElementById('root')
     )
