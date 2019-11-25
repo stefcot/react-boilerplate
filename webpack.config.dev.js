@@ -16,13 +16,7 @@ module.exports = merge(baseConfig, {
         exclude: /node_modules/,
         options: {
           presets: [
-            ['@babel/preset-env', { // use with '@babel/polyfill'
-              targets: [
-                'last 2 versions',
-                'not dead',
-                'not < 2%',
-                'not ie 11'
-              ],
+            ['@babel/preset-env', { // use with '@babel/polyfill', will get browsers list from .browserslistrc
               useBuiltIns: 'entry'
             }],
             '@babel/preset-react'
